@@ -15,6 +15,9 @@ var errMap = {
     "Can't fetch the CSRF token for"                : "发射娘在获取CSRF验证信息的时候出错了涅。",
     "Can't find friend"                             : "未能找到该好友，但也有可能是发射娘感冒了开了个小差，如果主人确定输入信息无误，请稍后再试。",
 
+    "Invalid sender mobile number."                 : "主人，你的手机号写错啦！",
+    "Invalid receiver mobile number."               : "主人，发射娘要射的地方手机号写错啦！",
+
     "最多输入 500 字"                                : null
 };
 
