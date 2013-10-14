@@ -1,0 +1,49 @@
+extends ../public/header
+
+block content
+    script(type="text/javascript", src="js/store+json2.min.js")
+    script(type="text/javascript", src="js/miaoo~o~.js")
+
+    div(class="container" style="margin-bottom: 130px;")
+        div(class="row", style="text-align: center;", id="logo-div")
+            img(src="images/xiaohei.png")
+
+        div(class="row")
+            div(class="col-md-3")
+
+            div(class="col-md-6 well" id="main-form")
+                form(role="form" class="form-horizontal" onsubmit="return sendmsg();" method="GET" action="/")
+                    div(class="form-group")
+                        label(for="from" class="col-md-2 control-label") 发送方
+                        div(class="col-md-10")
+                            input(type="mobile" class="form-control" id="from" placeholder="发送方手机号...")
+                    div(class="form-group")
+                        label(for="password" class="col-md-2 control-label") 密　码
+                        div(class="col-md-10")
+                            input(type="password" class="form-control" id="password" placeholder="请输入密码...")
+                    div(class="form-group")
+                        label(for="to" class="col-md-2 control-label") 接收方
+                        div(class="col-md-10")
+                            input(type="mobile" class="form-control" id="to" placeholder="接收方手机号...")
+                    div(class="form-group")
+                        label(for="message" class="col-md-2 control-label") 消　息
+                        div(class="col-md-10")
+                            textarea(class="form-control" id="message" rows="3" placeholder="发送的内容... (最多500字)")
+                    div(class="form-group")
+                        div(class="col-md-12")
+                            button(id="submit" type="submit" class="btn btn-warning btn-block" data-loading-text="<img src=\"images/loading.gif\" style=\"width: 16px; height: 16px;\" /> (o_ _）ノ彡☆ 发射中...") 发射～ q===(＿Δ＿〃)p q(〃＿Δ＿)===p
+
+            div(class="col-md-3")
+
+    div(class="modal fade", id="result-modal")
+        div(class="modal-dialog")
+            div(class="modal-content")
+                div(class="modal-header")
+                    button(type="button", class="close", data-dismiss="modal", aria-hidden="true") &times;
+                    h4(class="modal-title") 发送结果
+
+                div(class="modal-body")
+                    div(id="result-text")
+
+
+    include ../public/footer

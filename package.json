@@ -1,0 +1,31 @@
+{
+  "name": "moefetion",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.0",
+    "jade": "*",
+    "fetion-sender": "~0.0.1",
+    "supermarked": "~1.1.0",
+    "validator": "~1.5.1"
+  },
+  "description": "Moe way to use fetion api.",
+  "main": "app.js",
+  "devDependencies": {},
+  "keywords": [
+    "moe",
+    "fetion"
+  ],
+  "author": "XadillaX",
+  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:XadillaX/moefetion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XadillaX/moefetion/issues"
+  }
+}
