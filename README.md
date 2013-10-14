@@ -1,4 +1,37 @@
-moefetion
-=========
+# 欢迎使用飞信喵免费API
 
-The moe way to use fetion api.
+## 使用方法
+
+很简单，只需要请求下面的url即可：
+
+`http://fetion.kacaka.ca/api/send?from=00000000000&to=00000000000&password=00000000000&msg=blahblah`
+
+或者
+
+`http://cn.fetion.kacaka.ca/api/send?from=00000000000&to=00000000000&password=00000000000&msg=blahblah`
+
+（国内线路因为是移动线路加动态域名被电信墙了，通常**网通**和**移动**是能上的，若是**电信**线路请用第一个地址）
+
+其中每个字段如下解释：
+
+  + `from`: 发送方手机号码
+  + `to`: 接收方手机号码
+  + `password`: 发送方飞信密码
+  + `msg`: 消息内容（不超过500字）
+
+请求之后页面会返回结果信息，内容为一段 `JSON` 文字：
+
+    {
+        status: [ true|false ],
+        msg: [ blahblah... ]
+    }
+
+若信息发送成功则 `status` 为 `true` 且 `msg` 为空。否则 `status` 为 `false` 且 `msg` 为错误信息。
+
+## 玩坏申明
+
+虽然飞信喵的发射娘很好玩，但请不要玩坏她，不要滥发信息。不然即使是发射娘也会被 `中国移不动` 公司咬杀的哦～
+
+## 抬爪提问
+
+有任何问题请联系我的真·主人哈：admin#xcoder.in。
