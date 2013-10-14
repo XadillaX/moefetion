@@ -8,7 +8,7 @@
   "dependencies": {
     "express": "3.4.0",
     "jade": "*",
-    "fetion-sender": "~0.0.1",
+    "fetion-sender": "~0.0.2",
     "supermarked": "~1.1.0",
     "validator": "~1.5.1"
   },
