@@ -6,5 +6,5 @@
  * index action.
  */
 exports.index = function(req, resp) {
-    resp.render("index/index", { title : '(〃ノ∇ノ) 飞信喵' });
+    resp.render("index/index", { title : '(〃ノ∇ノ) 飞信喵 Nyaa～' });
 };
