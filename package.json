@@ -9,7 +9,7 @@
     "express": "3.4.0",
     "jade": "*",
     "fetion-sender": "~0.0.5",
-    "supermarked": "~1.1.0",
+    "supermarked": "~2.0.0",
     "validator": "~1.5.1"
   },
   "description": "Moe way to use fetion api.",
