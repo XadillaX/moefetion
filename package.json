@@ -6,7 +6,7 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "3.4.0",
+    "express": "4.19.2",
     "jade": "*",
     "fetion-sender": "~0.0.5",
     "supermarked": "~1.1.0",
